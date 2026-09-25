@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Kumar — Cyber Security • Builder • Community</title>
+  <meta name="description" content="Portfolio of Aman Kumar — Cyber Security student, builder, and community lead. Operations Lead at CodexSec, Microsoft Student Ambassador.">
+  
+  <!-- Retro Google Fonts: Playfair Display + Plus Jakarta Sans + Caveat + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230c0f14'/><text x='50' y='68' font-family='serif' font-size='56' font-weight='bold' fill='white' text-anchor='middle'>A</text></svg>">
+</head>
+<body class="retro-theme">
+
+  <!-- =========================================================================
+       NAVIGATION BAR (Retro Vintage Header)
+       ========================================================================= -->
+  <header class="retro-navbar" id="topNavbar">
+    <div class="nav-container">
+      <!-- Left: Square Black Logo Tile -->
+      <a href="#hero" class="nav-brand" aria-label="Aman Kumar Home">
+        <div class="brand-logo-tile">A</div>
+        <span class="brand-name">Aman Kumar</span>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <nav class="nav-links" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right: Action Buttons -->
+      <div class="nav-actions">
+        <!-- Audio Synthesizer Toggle -->
+        <button class="retro-icon-btn" id="soundToggleBtn" title="Toggle Retro Sound FX" aria-label="Toggle Retro Audio">
+          <span class="sound-icon">🔔</span>
+        </button>
+
+        <a href="#about" class="retro-btn-outline" id="navResumeBtn">About Me</a>
+        <a href="#contact" class="retro-btn-solid">Let's Talk</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION (Exact 1:1 Match with Reference Design)
+       ========================================================================= -->
+  <section class="retro-hero-section" id="hero">
+    <div class="hero-container">
+      
+      <!-- Left Column: Typography & Input Pill -->
+      <div class="hero-left-content">
+        <!-- Giant High-Contrast Retro Editorial Headline -->
+        <h1 class="hero-main-title">
+          Handle your<br>
+          Security &amp; Code<br>
+          Easily
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="hero-subtext">
+          Aman Kumar delivers resilient cybersecurity platforms, practical AI tools, and vibrant tech communities with blazing performance.
+        </p>
+
+        <!-- Integrated Pill Input (Exact Match with Reference Image) -->
+        <div class="hero-input-pill-wrapper">
+          <div class="hero-input-pill">
+            <input 
+              type="email" 
+              id="heroEmailInput" 
+              class="hero-email-input" 
+              placeholder="Your Email address..." 
+              value="amankumar.tech@gmail.com"
+              aria-label="Email address to get in touch"
+            >
+            <button class="hero-get-started-btn" id="heroGetStartedBtn">
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- Micro Social / Credential Badges -->
+        <div class="hero-micro-badges">
+          <span class="micro-badge">
+            <span class="badge-dot green"></span> Operations Lead @ CodexSec
+          </span>
+          <span class="micro-badge">
+            <span class="badge-dot yellow"></span> Microsoft Student Ambassador
+          </span>
+          <span class="micro-badge">
+            <span class="badge-dot pink"></span> 5+ Shipped Platforms
+          </span>
+        </div>
+      </div>
+
+      <!-- Right Column: Hand-Drawn Retro Multitasking Hacker Illustration -->
+      <div class="hero-right-illustration">
+        <div class="illustration-frame">
+          
+          <!-- Master Vector Hand-Drawn Sketchy Artwork -->
+          <svg class="retro-sketch-svg" viewBox="0 0 620 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Filter for organic hand-drawn roughness -->
+              <filter id="handDrawnFilter" x="-5%" y="-5%" width="110%" height="110%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G" />
+              </filter>
+            </defs>
+
+            <!-- BACKGROUND WINDOW 1: Primary Monitor Screen -->
+            <g class="desk-monitor-group" filter="url(#handDrawnFilter)">
+              <!-- Screen Outer Box -->
+              <rect x="180" y="80" width="360" height="260" rx="8" stroke="#0c0f14" stroke-width="2.5" fill="#f8fdfe" />
+              <!-- Window Header Bar -->
+              <line x1="180" y1="112" x2="540" y2="112" stroke="#0c0f14" stroke-width="2" />
+              <!-- Window Control Icons (x - o) -->
+              <text x="195" y="103" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#0c0f14">✕  –  ○</text>
+              <text x="320" y="102" font-family="'JetBrains Mono', monospace" font-size="11" fill="#475569">terminal://rootsec.sh</text>
+
+              <!-- Screen Code Wireframe Lines -->
+              <line x1="205" y1="135" x2="270" y2="135" stroke="#0c0f14" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="280" y1="135" x2="350" y2="135" stroke="#26d07c" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="205" y1="155" x2="320" y2="155" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+              <line x1="205" y1="175" x2="250" y2="175" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+              <line x1="260" y1="175" x2="390" y2="175" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+              <line x1="205" y1="195" x2="300" y2="195" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+            </g>
+
+            <!-- MONITOR STAND & DESK -->
+            <g class="monitor-stand" filter="url(#handDrawnFilter)">
+              <line x1="360" y1="340" x2="360" y2="395" stroke="#0c0f14" stroke-width="3" stroke-linecap="round" />
+              <line x1="310" y1="395" x2="410" y2="395" stroke="#0c0f14" stroke-width="3" stroke-linecap="round" />
+            </g>
+
+            <!-- FLOATING WINDOW 2: Code / Checkmark Modal Window -->
+            <g class="floating-check-window" filter="url(#handDrawnFilter)">
+              <rect x="250" y="145" width="165" height="110" rx="6" stroke="#0c0f14" stroke-width="2.2" fill="#ffffff" />
+              <!-- Green Checkmark Circle inside window -->
+              <circle cx="332" cy="200" r="28" fill="#26d07c" stroke="#0c0f14" stroke-width="2" />
+              <!-- Checkmark Tick -->
+              <path d="M320 200 L329 209 L346 190" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+
+            <!-- FLOATING WINDOW 3: Retro Mustard Yellow Mountain Picture Frame -->
+            <g class="floating-yellow-frame" filter="url(#handDrawnFilter)">
+              <rect x="420" y="90" width="135" height="95" rx="6" fill="#ffcf44" stroke="#0c0f14" stroke-width="2.5" />
+              <!-- Sun Doodle -->
+              <circle cx="510" cy="115" r="9" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+              <!-- Mountain Peaks Doodle -->
+              <path d="M430 170 L465 125 L495 160 L515 140 L545 170" fill="none" stroke="#0c0f14" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+            </g>
+
+            <!-- FLOATING ENVELOPE DOODLE (Right Bottom) -->
+            <g class="floating-envelope-group" filter="url(#handDrawnFilter)">
+              <rect x="510" y="380" width="60" height="42" rx="4" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+              <path d="M510 384 L540 405 L570 384" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <line x1="512" y1="420" x2="528" y2="406" stroke="#0c0f14" stroke-width="1.8" />
+              <line x1="568" y1="420" x2="552" y2="406" stroke="#0c0f14" stroke-width="1.8" />
+            </g>
+
+            <!-- FLOATING CODE / FOLDER DOODLE (Left) -->
+            <g class="floating-left-folder" filter="url(#handDrawnFilter)">
+              <rect x="110" y="270" width="70" height="52" rx="4" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+              <path d="M110 282 L180 282" stroke="#0c0f14" stroke-width="1.8" />
+              <text x="120" y="305" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#0c0f14">&lt;/&gt;</text>
+            </g>
+
+            <!-- ===============================================================
+                 THE RETRO CHARACTER & CORAL-PINK MULTITASKING ARMS
+                 =============================================================== -->
+            
+            <!-- ARM 1: Wavy Pink Arm stretching to the Mountain Picture (Top Right) -->
+            <g class="pink-arm-group arm-top-right">
+              <!-- Arm Path -->
+              <path d="M375 360 C420 330 460 270 480 185 C485 165 470 160 460 175 C440 215 410 275 365 375" 
+                    fill="#ff7f8a" stroke="#0c0f14" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <!-- Hand / Fingers holding frame -->
+              <path d="M472 178 C476 168 488 170 485 182" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M480 172 C486 164 496 168 493 180" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M488 175 C495 168 504 172 500 184" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+            </g>
+
+            <!-- ARM 2: Curving Pink Arm stretching to the Checkmark Screen (Center-Left) -->
+            <g class="pink-arm-group arm-center-left">
+              <path d="M315 360 C260 300 230 250 248 185 C255 165 272 175 270 195 C265 240 290 285 330 365" 
+                    fill="#ff7f8a" stroke="#0c0f14" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <!-- Fingers -->
+              <path d="M245 185 C240 175 248 165 258 172" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M250 180 C248 170 258 162 266 170" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M258 178 C256 168 268 162 274 172" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+            </g>
+
+            <!-- ARM 3: Curving Far-Left Pink Arm stretching out wide -->
+            <g class="pink-arm-group arm-far-left">
+              <path d="M310 380 C240 370 160 320 145 220 C140 195 158 190 168 210 C185 260 235 325 320 390" 
+                    fill="#ff7f8a" stroke="#0c0f14" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <!-- Hand -->
+              <path d="M142 215 C136 205 146 195 154 205" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M147 208 C144 198 154 190 162 200" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M154 206 C152 196 163 192 168 202" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+            </g>
+
+            <!-- ARM 4: Far-Right Pink Arm stretching to the Envelope (Far-Right) -->
+            <g class="pink-arm-group arm-far-right">
+              <path d="M380 380 C445 370 510 330 528 240 C534 215 518 210 508 230 C490 280 445 335 370 395" 
+                    fill="#ff7f8a" stroke="#0c0f14" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <!-- Hand -->
+              <path d="M528 235 C534 225 524 215 516 225" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M523 228 C526 218 516 210 508 220" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+              <path d="M516 226 C518 216 507 212 502 222" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+            </g>
+
+            <!-- CHARACTER BODY & HEAD (Center) -->
+            <g class="character-center" filter="url(#handDrawnFilter)">
+              <!-- Torso / Shirt in White with Black Ink Lines -->
+              <path d="M315 390 L310 490 L390 490 L385 390 Z" fill="#ffffff" stroke="#0c0f14" stroke-width="2.5" />
+              <!-- Collar V-neck -->
+              <path d="M335 390 L350 425 L365 390" fill="none" stroke="#0c0f14" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="350" y1="425" x2="350" y2="475" stroke="#0c0f14" stroke-width="2" stroke-dasharray="3 3" />
+
+              <!-- Neck -->
+              <rect x="340" y="365" width="20" height="28" fill="#fce4d6" stroke="#0c0f14" stroke-width="2" />
+
+              <!-- Head -->
+              <ellipse cx="350" cy="335" rx="20" ry="24" fill="#fce4d6" stroke="#0c0f14" stroke-width="2.2" />
+
+              <!-- Curly Dark Hair Doodle -->
+              <path d="M330 330 C325 315 335 305 345 305 C355 300 365 305 370 315 C375 325 370 335 365 338 C360 325 340 325 330 330" 
+                    fill="#0c0f14" stroke="#0c0f14" stroke-width="2" />
+              <!-- Hair Curls -->
+              <circle cx="340" cy="308" r="7" fill="#0c0f14" />
+              <circle cx="352" cy="305" r="8" fill="#0c0f14" />
+              <circle cx="363" cy="310" r="7" fill="#0c0f14" />
+
+              <!-- Minimal Face Features -->
+              <circle cx="344" cy="334" r="2.2" fill="#0c0f14" />
+              <circle cx="356" cy="334" r="2.2" fill="#0c0f14" />
+              <path d="M347 344 Q350 348 353 344" fill="none" stroke="#0c0f14" stroke-width="1.8" stroke-linecap="round" />
+            </g>
+
+            <!-- PLAYFUL RETRO DOODLES (Sparkles, Curled Arrows, Smiley) -->
+            <g class="retro-playful-doodles" filter="url(#handDrawnFilter)">
+              <!-- Sparkle 1 (Top Left) -->
+              <path d="M125 150 L135 150 M130 145 L130 155" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+              <!-- Sparkle 2 (Top Right) -->
+              <path d="M570 140 L582 140 M576 134 L576 146" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+              <!-- Hand-drawn Smiley (Far Right) -->
+              <path d="M545 320 Q555 330 565 320" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" fill="none" />
+              <circle cx="548" cy="312" r="2" fill="#0c0f14" />
+              <circle cx="562" cy="312" r="2" fill="#0c0f14" />
+            </g>
+          </svg>
+
+          <!-- FLOATING WHITE RETRO BADGE 1: "A+ Rating ★★★★★" (Exact Match with Reference Image) -->
+          <div class="floating-retro-card rating-badge-card" id="ratingBadgeCard">
+            <h3 class="rating-title">A+ Rating</h3>
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+
+          <!-- FLOATING WHITE RETRO BADGE 2: "Security Verified" (Top Right of Illustration) -->
+          <div class="floating-retro-card security-badge-card">
+            <span class="security-dot"></span>
+            <div class="security-meta">
+              <span class="security-label">CTF &amp; UPTIME</span>
+              <span class="security-val">100% VERIFIED</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 01 — ABOUT AMAN KUMAR
+       ========================================================================= -->
+  <section class="retro-section" id="about">
+    <div class="retro-container">
+      
+      <!-- Section Header -->
+      <div class="section-tag-row">
+        <span class="retro-tag-pill">01 // ABOUT ME</span>
+        <span class="handwritten-annotation">passionate builder &amp; security lead ✎</span>
+      </div>
+
+      <div class="about-grid-card">
+        <!-- Left: Editorial Storytelling -->
+        <div class="about-text-column">
+          <h2 class="retro-section-heading">
+            At the intersection of <span class="highlight-underline">cybersecurity</span>, practical AI, and community.
+          </h2>
+
+          <p class="about-lead-copy">
+            Hi, I'm <strong>Aman Kumar</strong>. A Cyber Security student, builder, and community enthusiast. I work across vulnerability assessments, secure web systems engineering, automation pipelines, and student developer ecosystems.
+          </p>
+
+          <p class="about-body-copy">
+            From architecting state-level CTF competition platforms to building civic governance tools, my core focus is building digital infrastructure that is secure, resilient, and deeply impactful.
+          </p>
+
+          <!-- Key Pillars Pills -->
+          <div class="about-pillars-grid">
+            <div class="pillar-pill">
+              <span class="pillar-icon">🛡️</span>
+              <span class="pillar-text">Cyber Security &amp; CTFs</span>
+            </div>
+            <div class="pillar-pill">
+              <span class="pillar-icon">🤖</span>
+              <span class="pillar-text">Applied AI &amp; Automation</span>
+            </div>
+            <div class="pillar-pill">
+              <span class="pillar-icon">🌐</span>
+              <span class="pillar-text">Scalable Web Platforms</span>
+            </div>
+            <div class="pillar-pill">
+              <span class="pillar-icon">👥</span>
+              <span class="pillar-text">Developer Communities</span>
+            </div>
+          </div>
+
+          <!-- Quick Action Link -->
+          <div class="about-actions-row">
+            <a href="#projects" class="retro-btn-solid">Explore Flagship Projects ↗</a>
+            <button class="retro-btn-outline" id="aboutCopyEmailBtn">Copy Email Address</button>
+          </div>
+        </div>
+
+        <!-- Right: Polaroid Profile Showcase with Tape & Stamp -->
+        <div class="about-visual-column">
+          <div class="retro-polaroid-frame">
+            <div class="washi-tape-strip"></div>
+            
+            <div class="polaroid-photo-wrapper">
+              <img src="assets/hero-hacker.jpg" alt="Aman Kumar Workspace" class="polaroid-photo-img">
+              <div class="retro-stamp-badge">VERIFIED</div>
+            </div>
+
+            <div class="polaroid-caption">
+              <span class="caption-handwritten">Aman Kumar — Security &amp; Systems</span>
+              <span class="caption-date">2026 Edition</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 02 — FLAGSHIP PROJECTS
+       ========================================================================= -->
+  <section class="retro-section bg-alt" id="projects">
+    <div class="retro-container">
+      
+      <!-- Section Header with Filter Pills -->
+      <div class="section-top-flex">
+        <div>
+          <span class="retro-tag-pill">02 // PORTFOLIO</span>
+          <h2 class="retro-section-heading">Featured Works &amp; Systems</h2>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All (6)</button>
+          <button class="filter-btn" data-filter="cyber">Security &amp; CTF</button>
+          <button class="filter-btn" data-filter="ai-web">AI &amp; Web</button>
+          <button class="filter-btn" data-filter="civic">Civic &amp; EdTech</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid (Retro Cards with Clean Drop Shadows) -->
+      <div class="retro-projects-grid" id="projectsGrid">
+        
+        <!-- Project 1: ROOTSEC -->
+        <article class="retro-card project-card" data-category="cyber" id="card-rootsec">
+          <div class="project-card-media">
+            <!-- Retro Window Chrome Bar -->
+            <div class="project-window-bar">
+              <div class="window-dots">
+                <span class="w-dot dot-red"></span>
+                <span class="w-dot dot-yellow"></span>
+                <span class="w-dot dot-green"></span>
+              </div>
+              <span class="window-url-tab">rootsec.io/defense</span>
+              <button class="view-toggle-pill" data-target="rootsec" title="Toggle between Retro Art and Live Screenshot">
+                <span class="toggle-icon">🎨</span>
+                <span class="toggle-text">Art</span>
+              </button>
+            </div>
+
+            <!-- Visual 1: Bespoke Retro Hand-Drawn SVG Illustration (Default Active) -->
+            <div class="media-display-box art-box active" id="art-rootsec">
+              <svg class="project-retro-svg" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Monitor Screen Base -->
+                <rect x="25" y="20" width="370" height="210" rx="8" fill="#f8fdfe" stroke="#0c0f14" stroke-width="2.5" />
+                
+                <!-- Terminal Screen Sub-box -->
+                <rect x="45" y="40" width="165" height="150" rx="6" fill="#0c0f14" stroke="#0c0f14" stroke-width="2" />
+                <line x1="55" y1="60" x2="110" y2="60" stroke="#26d07c" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="55" y1="75" x2="160" y2="75" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="55" y1="90" x2="135" y2="90" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round" />
+                <text x="55" y="125" font-family="'JetBrains Mono', monospace" font-size="11" fill="#26d07c" font-weight="bold">[PASS] SEC_AUDIT</text>
+                <text x="55" y="145" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">VULN_SCAN: 0 LEAKS</text>
+                <line x1="55" y1="165" x2="190" y2="165" stroke="#ff7f8a" stroke-width="2" stroke-linecap="round" />
+
+                <!-- Central Defensive Cyber Shield -->
+                <g class="shield-group">
+                  <path d="M295 50 C335 50 365 65 365 110 C365 160 315 185 295 195 C275 185 225 160 225 110 C225 65 255 50 295 50 Z" 
+                        fill="#26d07c" stroke="#0c0f14" stroke-width="3" stroke-linejoin="round" />
+                  <!-- Inner Core Shield -->
+                  <path d="M295 65 C322 65 345 76 345 110 C345 145 310 166 295 174 C280 166 245 145 245 110 C245 76 268 65 295 65 Z" 
+                        fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+                  <!-- Keyhole Doodle -->
+                  <circle cx="295" cy="105" r="9" fill="#0c0f14" />
+                  <path d="M291 108 L288 126 L302 126 L299 108 Z" fill="#0c0f14" />
+                </g>
+
+                <!-- Floating Lock Doodle (Coral Pink) -->
+                <g class="floating-lock-doodle">
+                  <rect x="200" y="35" width="32" height="24" rx="4" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+                  <path d="M207 35 V26 C207 20 225 20 225 26 V35" fill="none" stroke="#0c0f14" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="216" cy="47" r="3" fill="#ffffff" />
+                </g>
+
+                <!-- Green Checkmark Circle -->
+                <g class="floating-check-doodle">
+                  <circle cx="370" cy="175" r="16" fill="#26d07c" stroke="#0c0f14" stroke-width="2" />
+                  <path d="M363 175 L368 180 L378 169" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+
+                <!-- Sparkle Doodles -->
+                <path d="M220 185 L228 185 M224 181 L224 189" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+                <path d="M380 45 L388 45 M384 41 L384 49" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <!-- Visual 2: Realistic Screenshot (Hidden by Default, Toggled via Button) -->
+            <div class="media-display-box photo-box" id="photo-rootsec">
+              <img src="assets/project-rootsec.jpg" alt="RootSec Cyber Platform" class="project-img">
+            </div>
+
+            <!-- Floating White Retro Rating Badge (Matches Hero A+ Card) -->
+            <div class="card-floating-badge">
+              <span class="badge-grade">A+ Security</span>
+              <span class="badge-mini-stars">★★★★★</span>
+            </div>
+
+            <span class="project-category-tag tag-pink">SECURITY PLATFORM</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-title-row">
+              <h3 class="project-card-title">ROOTSEC</h3>
+              <span class="card-doodle-label">vulnerability scanner ✎</span>
+            </div>
+            <p class="project-card-desc">
+              Comprehensive cybersecurity platform providing automated vulnerability intelligence, defensive security tooling, and infrastructure auditing for organizations.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Linux</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="card-action-btn view-details-btn" data-project="rootsec">
+                <span>View Details</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+              <span class="project-status-dot green" title="Active Platform">● Deployed</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: BLACKOUT SECTOR -->
+        <article class="retro-card project-card" data-category="cyber" id="card-blackout">
+          <div class="project-card-media">
+            <!-- Retro Window Chrome Bar -->
+            <div class="project-window-bar">
+              <div class="window-dots">
+                <span class="w-dot dot-red"></span>
+                <span class="w-dot dot-yellow"></span>
+                <span class="w-dot dot-green"></span>
+              </div>
+              <span class="window-url-tab">blackout-ctf.org/arena</span>
+              <button class="view-toggle-pill" data-target="blackout" title="Toggle between Retro Art and Live Screenshot">
+                <span class="toggle-icon">🎨</span>
+                <span class="toggle-text">Art</span>
+              </button>
+            </div>
+
+            <!-- Visual 1: Bespoke Retro Hand-Drawn SVG Illustration -->
+            <div class="media-display-box art-box active" id="art-blackout">
+              <svg class="project-retro-svg" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="20" width="370" height="210" rx="8" fill="#f8fdfe" stroke="#0c0f14" stroke-width="2.5" />
+                
+                <!-- Terminal / Radar Screen -->
+                <rect x="45" y="40" width="180" height="150" rx="6" fill="#0c0f14" stroke="#0c0f14" stroke-width="2" />
+                <!-- Radar Circle -->
+                <circle cx="105" cy="115" r="42" fill="none" stroke="#26d07c" stroke-width="1.8" />
+                <circle cx="105" cy="115" r="22" fill="none" stroke="#26d07c" stroke-width="1.2" stroke-dasharray="2 2" />
+                <line x1="105" y1="73" x2="105" y2="157" stroke="#26d07c" stroke-width="1" />
+                <line x1="63" y1="115" x2="147" y2="115" stroke="#26d07c" stroke-width="1" />
+                <!-- Blips -->
+                <circle cx="118" cy="98" r="3" fill="#ff7f8a" />
+                <circle cx="92" cy="130" r="3" fill="#ffcf44" />
+                <!-- Code Matrix text -->
+                <text x="155" y="75" font-family="'JetBrains Mono', monospace" font-size="10" fill="#26d07c">01001</text>
+                <text x="155" y="95" font-family="'JetBrains Mono', monospace" font-size="10" fill="#26d07c">11010</text>
+                <text x="155" y="115" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">00110</text>
+                <text x="155" y="135" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ff7f8a">FLAG{*}</text>
+
+                <!-- Hand-drawn CTF Hacker Flag (Yellow & Pink) -->
+                <g class="ctf-flag-group">
+                  <!-- Flag Pole -->
+                  <line x1="260" y1="45" x2="260" y2="195" stroke="#0c0f14" stroke-width="3" stroke-linecap="round" />
+                  <circle cx="260" cy="45" r="4" fill="#0c0f14" />
+                  <!-- Waving Flag Cloth in Mustard Yellow -->
+                  <path d="M260 52 C295 40 330 65 370 52 L365 115 C325 125 295 105 260 115 Z" 
+                        fill="#ffcf44" stroke="#0c0f14" stroke-width="2.5" stroke-linejoin="round" />
+                  <!-- Skull / Cross Flag Emblem Doodle -->
+                  <circle cx="310" cy="82" r="8" fill="#0c0f14" />
+                  <circle cx="307" cy="80" r="1.5" fill="#ffffff" />
+                  <circle cx="313" cy="80" r="1.5" fill="#ffffff" />
+                  <line x1="298" y1="95" x2="322" y2="95" stroke="#0c0f14" stroke-width="2" />
+                </g>
+
+                <!-- Floating Trophy Doodle (Top Right) -->
+                <g class="floating-trophy">
+                  <path d="M335 140 H365 V155 C365 168 355 178 350 178 C345 178 335 168 335 155 Z" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+                  <path d="M350 178 V190 M340 190 H360" stroke="#0c0f14" stroke-width="2.2" stroke-linecap="round" />
+                </g>
+
+                <!-- Sparkles -->
+                <path d="M240 160 L248 160 M244 156 L244 164" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <!-- Visual 2: Realistic Screenshot -->
+            <div class="media-display-box photo-box" id="photo-blackout">
+              <img src="assets/project-blackout.jpg" alt="Blackout Sector CTF Platform" class="project-img">
+            </div>
+
+            <!-- Floating White Retro Rating Badge -->
+            <div class="card-floating-badge">
+              <span class="badge-grade">A+ CTF Arena</span>
+              <span class="badge-mini-stars">★★★★★</span>
+            </div>
+
+            <span class="project-category-tag tag-yellow">CTF COMPETITION</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-title-row">
+              <h3 class="project-card-title">BLACKOUT SECTOR</h3>
+              <span class="card-doodle-label">live attack/defense ✎</span>
+            </div>
+            <p class="project-card-desc">
+              High-intensity CTF competition platform hosting real-time scoreboards, dynamic flag verification, binary exploitation sandboxes, and reverse engineering challenges.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">Sandbox</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="card-action-btn view-details-btn" data-project="blackout">
+                <span>View Details</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+              <span class="project-status-dot green">● Active</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: JanMitra -->
+        <article class="retro-card project-card" data-category="civic" id="card-janmitra">
+          <div class="project-card-media">
+            <!-- Retro Window Chrome Bar -->
+            <div class="project-window-bar">
+              <div class="window-dots">
+                <span class="w-dot dot-red"></span>
+                <span class="w-dot dot-yellow"></span>
+                <span class="w-dot dot-green"></span>
+              </div>
+              <span class="window-url-tab">janmitra.gov/grievance</span>
+              <button class="view-toggle-pill" data-target="janmitra" title="Toggle between Retro Art and Live Screenshot">
+                <span class="toggle-icon">🎨</span>
+                <span class="toggle-text">Art</span>
+              </button>
+            </div>
+
+            <!-- Visual 1: Bespoke Retro Hand-Drawn SVG Illustration -->
+            <div class="media-display-box art-box active" id="art-janmitra">
+              <svg class="project-retro-svg" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="20" width="370" height="210" rx="8" fill="#f8fdfe" stroke="#0c0f14" stroke-width="2.5" />
+                
+                <!-- City Skyline Silhouette Doodle -->
+                <g class="city-skyline" stroke="#0c0f14" stroke-width="2" fill="#ffffff">
+                  <!-- Building 1 -->
+                  <rect x="50" y="110" width="55" height="90" fill="#ffffff" />
+                  <rect x="60" y="125" width="10" height="12" fill="#ffcf44" />
+                  <rect x="80" y="125" width="10" height="12" fill="#8be4f0" />
+                  <rect x="60" y="150" width="10" height="12" fill="#8be4f0" />
+                  <rect x="80" y="150" width="10" height="12" fill="#ff7f8a" />
+                  <!-- Building 2 (Tall Central) -->
+                  <rect x="115" y="80" width="65" height="120" fill="#ffffff" />
+                  <line x1="147" y1="65" x2="147" y2="80" stroke-width="2.5" />
+                  <circle cx="147" cy="63" r="3" fill="#ff7f8a" />
+                  <rect x="127" y="98" width="12" height="14" fill="#ffcf44" />
+                  <rect x="153" y="98" width="12" height="14" fill="#26d07c" />
+                  <rect x="127" y="125" width="12" height="14" fill="#8be4f0" />
+                  <rect x="153" y="125" width="12" height="14" fill="#ffcf44" />
+                  <!-- Building 3 (Municipal Office with Dome) -->
+                  <rect x="190" y="120" width="60" height="80" fill="#ffffff" />
+                  <path d="M190 120 C190 95 250 95 250 120 Z" fill="#ffcf44" />
+                </g>
+
+                <!-- Road / Connected Dotted Routing Line -->
+                <path d="M50 200 C150 190 250 205 380 195" stroke="#0c0f14" stroke-width="3" stroke-linecap="round" />
+                <path d="M147 165 C220 150 260 110 320 85" stroke="#ff7f8a" stroke-width="2.5" stroke-dasharray="4 4" />
+
+                <!-- Giant Playful Map Pin (Coral Pink with Green Checkmark) -->
+                <g class="map-pin-giant">
+                  <path d="M330 50 C305 50 285 70 285 95 C285 130 330 165 330 165 C330 165 375 130 375 95 C375 70 355 50 330 50 Z" 
+                        fill="#ff7f8a" stroke="#0c0f14" stroke-width="3" stroke-linejoin="round" />
+                  <circle cx="330" cy="92" r="22" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+                  <!-- Green Check inside pin -->
+                  <circle cx="330" cy="92" r="16" fill="#26d07c" />
+                  <path d="M323 92 L328 97 L337 86" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+
+                <!-- Sun Doodle (Top Left) -->
+                <circle cx="75" cy="55" r="14" fill="#ffcf44" stroke="#0c0f14" stroke-width="2" />
+                <path d="M75 35 V41 M75 69 V75 M55 55 H61 M89 55 H95" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <!-- Visual 2: Realistic Screenshot -->
+            <div class="media-display-box photo-box" id="photo-janmitra">
+              <img src="assets/project-janmitra.jpg" alt="JanMitra Civic Platform" class="project-img">
+            </div>
+
+            <!-- Floating White Retro Rating Badge -->
+            <div class="card-floating-badge">
+              <span class="badge-grade">A+ Civic Tech</span>
+              <span class="badge-mini-stars">★★★★★</span>
+            </div>
+
+            <span class="project-category-tag tag-cyan">CIVIC GOVERNANCE</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-title-row">
+              <h3 class="project-card-title">JanMitra</h3>
+              <span class="card-doodle-label">citizen redressed ✎</span>
+            </div>
+            <p class="project-card-desc">
+              Civic issue reporting and municipal governance tracking system enabling citizens to report community infrastructure defects with real-time geolocation and admin routing.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">GeoAPI</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="card-action-btn view-details-btn" data-project="janmitra">
+                <span>View Details</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+              <span class="project-status-dot green">● Public Beta</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Accounts.AI -->
+        <article class="retro-card project-card" data-category="ai-web" id="card-accounts_ai">
+          <div class="project-card-media">
+            <!-- Retro Window Chrome Bar -->
+            <div class="project-window-bar">
+              <div class="window-dots">
+                <span class="w-dot dot-red"></span>
+                <span class="w-dot dot-yellow"></span>
+                <span class="w-dot dot-green"></span>
+              </div>
+              <span class="window-url-tab">accounts.ai/virtual-lab</span>
+              <button class="view-toggle-pill" data-target="accounts_ai" title="Toggle between Retro Art and Live Screenshot">
+                <span class="toggle-icon">🎨</span>
+                <span class="toggle-text">Art</span>
+              </button>
+            </div>
+
+            <!-- Visual 1: Bespoke Retro Hand-Drawn SVG Illustration -->
+            <div class="media-display-box art-box active" id="art-accounts_ai">
+              <svg class="project-retro-svg" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="20" width="370" height="210" rx="8" fill="#f8fdfe" stroke="#0c0f14" stroke-width="2.5" />
+                
+                <!-- Vintage Open Ledger Book -->
+                <g class="vintage-ledger">
+                  <path d="M60 170 C100 160 140 160 180 170 L180 80 C140 70 100 70 60 80 Z" fill="#ffffff" stroke="#0c0f14" stroke-width="2.5" />
+                  <path d="M180 170 C220 160 260 160 300 170 L300 80 C260 70 220 70 180 80 Z" fill="#ffffff" stroke="#0c0f14" stroke-width="2.5" />
+                  <line x1="180" y1="80" x2="180" y2="170" stroke="#0c0f14" stroke-width="3" />
+                  <!-- Bookmark ribbon -->
+                  <path d="M180 80 L180 185 L187 175 L194 185 L194 80" fill="#ff7f8a" stroke="#0c0f14" stroke-width="1.8" />
+                  <!-- Ledger rule lines -->
+                  <line x1="80" y1="100" x2="160" y2="95" stroke="#94a3b8" stroke-width="1.5" />
+                  <line x1="80" y1="120" x2="160" y2="115" stroke="#94a3b8" stroke-width="1.5" />
+                  <line x1="80" y1="140" x2="160" y2="135" stroke="#94a3b8" stroke-width="1.5" />
+                  <line x1="200" y1="95" x2="280" y2="100" stroke="#26d07c" stroke-width="1.8" />
+                  <line x1="200" y1="115" x2="280" y2="120" stroke="#94a3b8" stroke-width="1.5" />
+                  <line x1="200" y1="135" x2="280" y2="140" stroke="#94a3b8" stroke-width="1.5" />
+                </g>
+
+                <!-- Cute Retro AI Robot Assistant Head (Top Right) -->
+                <g class="ai-bot-head">
+                  <rect x="305" y="45" width="65" height="55" rx="10" fill="#ffcf44" stroke="#0c0f14" stroke-width="2.5" />
+                  <!-- Antennae -->
+                  <line x1="337" y1="45" x2="337" y2="30" stroke="#0c0f14" stroke-width="2" />
+                  <circle cx="337" cy="27" r="4" fill="#ff7f8a" stroke="#0c0f14" stroke-width="1.5" />
+                  <!-- Screen Face -->
+                  <rect x="313" y="55" width="49" height="35" rx="6" fill="#0c0f14" />
+                  <!-- Glowing Green Eyes -->
+                  <circle cx="327" cy="72" r="4.5" fill="#26d07c" />
+                  <circle cx="347" cy="72" r="4.5" fill="#26d07c" />
+                  <!-- Smile -->
+                  <path d="M333 80 Q337 84 341 80" stroke="#26d07c" stroke-width="1.8" fill="none" />
+                </g>
+
+                <!-- Floating Coin Stacks in Mustard Yellow -->
+                <g class="coin-stack">
+                  <ellipse cx="335" cy="180" rx="20" ry="7" fill="#ffcf44" stroke="#0c0f14" stroke-width="2" />
+                  <ellipse cx="335" cy="168" rx="20" ry="7" fill="#ffcf44" stroke="#0c0f14" stroke-width="2" />
+                  <ellipse cx="335" cy="156" rx="20" ry="7" fill="#ffcf44" stroke="#0c0f14" stroke-width="2" />
+                  <text x="331" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#0c0f14">$</text>
+                </g>
+
+                <!-- Upward Growth Sparkle Arrow -->
+                <path d="M280 60 L300 40 M300 40 H288 M300 40 V52" stroke="#26d07c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <!-- Visual 2: Realistic Screenshot -->
+            <div class="media-display-box photo-box" id="photo-accounts_ai">
+              <img src="assets/project-cryptoflow.jpg" alt="Accounts.AI Virtual Lab" class="project-img">
+            </div>
+
+            <!-- Floating White Retro Rating Badge -->
+            <div class="card-floating-badge">
+              <span class="badge-grade">A+ AI Accuracy</span>
+              <span class="badge-mini-stars">★★★★★</span>
+            </div>
+
+            <span class="project-category-tag tag-pink">FINTECH &amp; AI</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-title-row">
+              <h3 class="project-card-title">Accounts.AI</h3>
+              <span class="card-doodle-label">automated bookkeeping ✎</span>
+            </div>
+            <p class="project-card-desc">
+              Intelligent accounting simulation and AI-driven bookkeeping virtual lab that automates balance sheet generation, ledger reconciliation, and tax estimation.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenAI</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="card-action-btn view-details-btn" data-project="accounts_ai">
+                <span>View Details</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+              <span class="project-status-dot green">● Live</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: ChemLove & PhyLove -->
+        <article class="retro-card project-card" data-category="civic" id="card-chemlove">
+          <div class="project-card-media">
+            <!-- Retro Window Chrome Bar -->
+            <div class="project-window-bar">
+              <div class="window-dots">
+                <span class="w-dot dot-red"></span>
+                <span class="w-dot dot-yellow"></span>
+                <span class="w-dot dot-green"></span>
+              </div>
+              <span class="window-url-tab">science-lab.edu/sim</span>
+              <button class="view-toggle-pill" data-target="chemlove" title="Toggle between Retro Art and Live Screenshot">
+                <span class="toggle-icon">🎨</span>
+                <span class="toggle-text">Art</span>
+              </button>
+            </div>
+
+            <!-- Visual 1: Bespoke Retro Hand-Drawn SVG Illustration -->
+            <div class="media-display-box art-box active" id="art-chemlove">
+              <svg class="project-retro-svg" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="20" width="370" height="210" rx="8" fill="#f8fdfe" stroke="#0c0f14" stroke-width="2.5" />
+                
+                <!-- Bubbling Chemistry Flask (Coral Pink Liquid) -->
+                <g class="chemistry-flask">
+                  <!-- Neck & Stopper -->
+                  <rect x="110" y="55" width="26" height="40" fill="#ffffff" stroke="#0c0f14" stroke-width="2.2" />
+                  <ellipse cx="123" cy="55" rx="15" ry="5" fill="#ffffff" stroke="#0c0f14" stroke-width="2.2" />
+                  <!-- Flask Body -->
+                  <path d="M110 95 L65 175 C60 185 68 195 80 195 H166 C178 195 186 185 181 175 L136 95 Z" 
+                        fill="#ffffff" stroke="#0c0f14" stroke-width="2.8" stroke-linejoin="round" />
+                  <!-- Pink Chemical Liquid -->
+                  <path d="M85 160 Q123 150 161 160 L166 195 H80 Z" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+                  <!-- Bubbles -->
+                  <circle cx="110" cy="175" r="4" fill="#ffffff" />
+                  <circle cx="135" cy="180" r="3" fill="#ffffff" />
+                  <circle cx="123" cy="130" r="5" fill="#ff7f8a" stroke="#0c0f14" stroke-width="1.5" />
+                  <circle cx="115" cy="105" r="3.5" fill="#8be4f0" stroke="#0c0f14" stroke-width="1.5" />
+                  <circle cx="128" cy="85" r="4.5" fill="#ffcf44" stroke="#0c0f14" stroke-width="1.5" />
+                </g>
+
+                <!-- Rutherford Atom Model (Cyan & Yellow) -->
+                <g class="atom-model">
+                  <ellipse cx="295" cy="115" rx="55" ry="22" stroke="#0c0f14" stroke-width="2" transform="rotate(-30 295 115)" />
+                  <ellipse cx="295" cy="115" rx="55" ry="22" stroke="#0c0f14" stroke-width="2" transform="rotate(30 295 115)" />
+                  <!-- Nucleus -->
+                  <circle cx="295" cy="115" r="14" fill="#ffcf44" stroke="#0c0f14" stroke-width="2.2" />
+                  <circle cx="292" cy="112" r="3" fill="#ffffff" />
+                  <!-- Orbiting Electron Particles -->
+                  <circle cx="255" cy="85" r="5" fill="#26d07c" stroke="#0c0f14" stroke-width="1.5" />
+                  <circle cx="340" cy="95" r="5" fill="#8be4f0" stroke="#0c0f14" stroke-width="1.5" />
+                  <circle cx="280" cy="150" r="5" fill="#ff7f8a" stroke="#0c0f14" stroke-width="1.5" />
+                </g>
+
+                <!-- Horseshoe Magnet (Top Left) -->
+                <g class="horseshoe-magnet">
+                  <path d="M225 65 V50 C225 38 250 38 250 50 V65" fill="none" stroke="#0c0f14" stroke-width="6" />
+                  <rect x="220" y="62" width="10" height="7" fill="#ff7f8a" stroke="#0c0f14" stroke-width="1.5" />
+                  <rect x="245" y="62" width="10" height="7" fill="#8be4f0" stroke="#0c0f14" stroke-width="1.5" />
+                </g>
+
+                <!-- Physics Formula Text -->
+                <text x="265" y="190" font-family="'Caveat', cursive" font-size="18" font-weight="bold" fill="#0c0f14">E = mc² ✎</text>
+              </svg>
+            </div>
+
+            <!-- Visual 2: Realistic Screenshot -->
+            <div class="media-display-box photo-box" id="photo-chemlove">
+              <img src="assets/project-nova.jpg" alt="ChemLove and PhyLove Science Laboratory" class="project-img">
+            </div>
+
+            <!-- Floating White Retro Rating Badge -->
+            <div class="card-floating-badge">
+              <span class="badge-grade">A+ Simulation</span>
+              <span class="badge-mini-stars">★★★★★</span>
+            </div>
+
+            <span class="project-category-tag tag-yellow">EDTECH SIMULATION</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-title-row">
+              <h3 class="project-card-title">ChemLove &amp; PhyLove</h3>
+              <span class="card-doodle-label">interactive experiments ✎</span>
+            </div>
+            <p class="project-card-desc">
+              Interactive web-based virtual science laboratory simulating complex chemistry reactions and physics mechanics experiments for high-school and university learners.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">Canvas 2D</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Physics</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="card-action-btn view-details-btn" data-project="chemlove">
+                <span>View Details</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+              <span class="project-status-dot green">● Open Access</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: DevOrbit -->
+        <article class="retro-card project-card" data-category="ai-web" id="card-devorbit">
+          <div class="project-card-media">
+            <!-- Retro Window Chrome Bar -->
+            <div class="project-window-bar">
+              <div class="window-dots">
+                <span class="w-dot dot-red"></span>
+                <span class="w-dot dot-yellow"></span>
+                <span class="w-dot dot-green"></span>
+              </div>
+              <span class="window-url-tab">devorbit.community/builders</span>
+              <button class="view-toggle-pill" data-target="devorbit" title="Toggle between Retro Art and Live Screenshot">
+                <span class="toggle-icon">🎨</span>
+                <span class="toggle-text">Art</span>
+              </button>
+            </div>
+
+            <!-- Visual 1: Bespoke Retro Hand-Drawn SVG Illustration -->
+            <div class="media-display-box art-box active" id="art-devorbit">
+              <svg class="project-retro-svg" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="20" width="370" height="210" rx="8" fill="#f8fdfe" stroke="#0c0f14" stroke-width="2.5" />
+                
+                <!-- Cosmic Planet with Ring -->
+                <g class="cosmic-planet">
+                  <ellipse cx="140" cy="125" rx="65" ry="18" stroke="#0c0f14" stroke-width="2.5" transform="rotate(-20 140 125)" />
+                  <circle cx="140" cy="125" r="42" fill="#8be4f0" stroke="#0c0f14" stroke-width="2.8" />
+                  <path d="M125 105 C145 105 160 115 170 125" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" />
+                </g>
+
+                <!-- Retro Space Rocket Blasting Off -->
+                <g class="retro-rocket">
+                  <!-- Rocket Body in Mustard Yellow -->
+                  <path d="M265 140 L290 80 C295 70 305 70 310 80 L335 140 Z" fill="#ffcf44" stroke="#0c0f14" stroke-width="2.5" stroke-linejoin="round" />
+                  <!-- Rocket Wings in Coral Pink -->
+                  <path d="M265 140 L250 160 L275 155 Z" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+                  <path d="M335 140 L350 160 L325 155 Z" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+                  <!-- Porthole Window -->
+                  <circle cx="300" cy="110" r="10" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+                  <circle cx="300" cy="110" r="6" fill="#8be4f0" />
+                  <!-- Exhaust Fire Flames -->
+                  <path d="M285 145 Q300 175 315 145 Q300 165 285 145 Z" fill="#ff7f8a" stroke="#0c0f14" stroke-width="2" />
+                </g>
+
+                <!-- Floating Code Bracket Tag -->
+                <g class="floating-code-tag">
+                  <rect x="55" y="45" width="55" height="32" rx="6" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+                  <text x="68" y="66" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold" fill="#0c0f14">&lt;/&gt;</text>
+                </g>
+
+                <!-- Connected Network Avatars (Hacker Team) -->
+                <g class="network-team">
+                  <circle cx="230" cy="185" r="14" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+                  <circle cx="230" cy="180" r="5" fill="#0c0f14" />
+                  <path d="M222 195 C222 190 238 190 238 195" fill="none" stroke="#0c0f14" stroke-width="1.8" />
+
+                  <circle cx="270" cy="195" r="14" fill="#ffffff" stroke="#0c0f14" stroke-width="2" />
+                  <circle cx="270" cy="190" r="5" fill="#ff7f8a" />
+                  <path d="M262 205 C262 200 278 200 278 205" fill="none" stroke="#0c0f14" stroke-width="1.8" />
+
+                  <!-- Connecting Dotted Line -->
+                  <line x1="244" y1="185" x2="256" y2="195" stroke="#0c0f14" stroke-width="2" stroke-dasharray="3 3" />
+                </g>
+
+                <!-- Sparkle Stars -->
+                <path d="M360 45 L368 45 M364 41 L364 49" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+                <path d="M190 40 L198 40 M194 36 L194 44" stroke="#0c0f14" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <!-- Visual 2: Realistic Screenshot -->
+            <div class="media-display-box photo-box" id="photo-devorbit">
+              <img src="assets/project-devorbit.jpg" alt="DevOrbit Collaboration Platform" class="project-img">
+            </div>
+
+            <!-- Floating White Retro Rating Badge -->
+            <div class="card-floating-badge">
+              <span class="badge-grade">A+ Community</span>
+              <span class="badge-mini-stars">★★★★★</span>
+            </div>
+
+            <span class="project-category-tag tag-cyan">COLLABORATION</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-title-row">
+              <h3 class="project-card-title">DevOrbit</h3>
+              <span class="card-doodle-label">hackathon teams ✎</span>
+            </div>
+            <p class="project-card-desc">
+              Community platform built for hackathon creators, open-source contributors, and tech enthusiasts to team up, track milestones, and showcase working MVPs.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Supabase</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="card-action-btn view-details-btn" data-project="devorbit">
+                <span>View Details</span>
+                <span class="btn-arrow">↗</span>
+              </button>
+              <span class="project-status-dot green">● Community</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 03 — EXPERIENCE & LEADERSHIP
+       ========================================================================= -->
+  <section class="retro-section" id="experience">
+    <div class="retro-container">
+      
+      <div class="section-tag-row">
+        <span class="retro-tag-pill">03 // TRACK RECORD</span>
+        <span class="handwritten-annotation">milestones &amp; leadership roles ✎</span>
+      </div>
+
+      <div class="experience-layout-grid">
+        <!-- Left: Retro Timeline List -->
+        <div class="timeline-column">
+          <h2 class="retro-section-heading">Experience &amp; Leadership</h2>
+
+          <div class="retro-timeline-wrapper">
+            
+            <!-- Item 1 -->
+            <div class="timeline-entry">
+              <div class="entry-year-badge">2026</div>
+              <div class="entry-card">
+                <div class="entry-header">
+                  <h3 class="entry-role">Operations Lead</h3>
+                  <span class="entry-org">CodexSec</span>
+                </div>
+                <p class="entry-desc">
+                  Spearheading practical IT learning programs and hands-on workshops for students. Leading technical infrastructure for CTF events and cybersecurity training modules.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="timeline-entry">
+              <div class="entry-year-badge">2026</div>
+              <div class="entry-card">
+                <div class="entry-header">
+                  <h3 class="entry-role">Microsoft Student Ambassador</h3>
+                  <span class="entry-org">Microsoft</span>
+                </div>
+                <p class="entry-desc">
+                  Engaging with the student developer community, promoting cloud security, Azure architectures, and modern AI engineering tooling across campus hackathons.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="timeline-entry">
+              <div class="entry-year-badge">2025</div>
+              <div class="entry-card">
+                <div class="entry-header">
+                  <h3 class="entry-role">Google Student Ambassador <span class="badge-sub">(Previous)</span></h3>
+                  <span class="entry-org">Google</span>
+                </div>
+                <p class="entry-desc">
+                  Drove technology outreach, open-source workshops, and developer ecosystem expansion across university computer science cohorts.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="timeline-entry">
+              <div class="entry-year-badge">2025</div>
+              <div class="entry-card">
+                <div class="entry-header">
+                  <h3 class="entry-role">IEDC Intern</h3>
+                  <span class="entry-org">Chandigarh University</span>
+                </div>
+                <p class="entry-desc">
+                  Coordinated incubation partnerships, student venture mentorship, early-stage prototype pitching, and cross-functional technical seminars.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="timeline-entry">
+              <div class="entry-year-badge">2025</div>
+              <div class="entry-card">
+                <div class="entry-header">
+                  <h3 class="entry-role">HackWithUttarPradesh 2025 Organizer</h3>
+                  <span class="entry-org">State-Level Hackathon</span>
+                </div>
+                <p class="entry-desc">
+                  Organized and executed a premier hackathon with a $10,000 prize pool, managing live technical tracks, server uptime, and project judging pipelines for 1000+ hackers.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Event Atmosphere Polaroid -->
+        <div class="timeline-visual-column">
+          <div class="retro-polaroid-frame tilted-right">
+            <div class="washi-tape-strip yellow-tape"></div>
+            
+            <div class="polaroid-photo-wrapper">
+              <img src="assets/experience-hackathon.jpg" alt="Hackathon Community Stage" class="polaroid-photo-img">
+              <div class="retro-stamp-badge stamp-yellow">$10K POOL</div>
+            </div>
+
+            <div class="polaroid-caption">
+              <span class="caption-handwritten">HackWithUP 2025 Stage Atmosphere</span>
+              <span class="caption-date">1000+ Hackers</span>
+            </div>
+          </div>
+
+          <!-- Highlight Quotation Card -->
+          <div class="retro-card quote-card">
+            <span class="quote-mark">“</span>
+            <p class="quote-text">
+              Building a safer, resilient, and more accessible internet by empowering the next wave of builders.
+            </p>
+            <span class="quote-author">— Aman Kumar</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 04 — SKILLS TERMINAL & ACHIEVEMENTS
+       ========================================================================= -->
+  <section class="retro-section bg-alt" id="skills">
+    <div class="retro-container">
+      
+      <div class="section-tag-row">
+        <span class="retro-tag-pill">04 // CAPABILITIES</span>
+        <span class="handwritten-annotation">interactive terminal &amp; badges ✎</span>
+      </div>
+
+      <h2 class="retro-section-heading">Technical Arsenal &amp; Honours</h2>
+
+      <div class="skills-terminal-layout">
+        <!-- Left: Retro Terminal Window -->
+        <div class="retro-terminal-window">
+          <!-- Terminal Title Bar -->
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span class="terminal-title-text">aman@retro-deck:~ (zsh)</span>
+            <span class="terminal-mode-badge">STATUS: READY</span>
+          </div>
+
+          <!-- Terminal Content Area -->
+          <div class="terminal-content" id="terminalScreen">
+            <div class="term-line output-welcome">
+              <span class="prompt-text">aman@portfolio:~$</span> system-info
+            </div>
+            <div class="term-line info-block">
+              =======================================================<br>
+              OPERATOR : Aman Kumar // Cyber Security &amp; Builder<br>
+              ROLE     : Operations Lead @ CodexSec | Microsoft Ambassador<br>
+              SYSTEM   : Retro-Linux 6.8.0-audit-core x86_64<br>
+              =======================================================
+            </div>
+            <div class="term-line output-skills-head">
+              <span class="prompt-text">aman@portfolio:~$</span> list-skills
+            </div>
+            <div class="term-line skills-list">
+              [+] Cyber Security    : Burp Suite, Nmap, Wireshark, Metasploit, Reverse Eng<br>
+              [+] Web Architecture : React, Next.js, Node.js, FastAPI, REST/WebSockets<br>
+              [+] Cloud &amp; Infra     : Docker, Linux Kernel, AWS, Azure, Nginx<br>
+              [+] Practical AI      : Python, LangChain, LLM APIs, Automation Pipelines<br>
+              [+] Leadership        : Hackathon Organization, Community Mentorship, CTF Lead
+            </div>
+            <div class="term-line hint-text">
+              Type 'help', 'projects', 'contact', or 'clear' below:
+            </div>
+            <!-- Interactive Input Line -->
+            <div class="term-interactive-row">
+              <span class="prompt-text">aman@portfolio:~$</span>
+              <input type="text" id="terminalInput" class="term-input" placeholder="try 'help'..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 5 Achievements Badges (Stamp Cards) -->
+        <div class="achievements-column">
+          <h3 class="achievements-headline">Core Recognitions</h3>
+          
+          <div class="achievements-cards-stack">
+            <!-- 01 -->
+            <div class="achievement-stamp-card">
+              <div class="stamp-number">01</div>
+              <div class="stamp-icon">🏆</div>
+              <div class="stamp-meta">
+                <span class="stamp-title">Hackathon Organizer</span>
+                <span class="stamp-sub">Managed HackWithUP ($10,000 Prize Pool)</span>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="achievement-stamp-card">
+              <div class="stamp-number">02</div>
+              <div class="stamp-icon">🪟</div>
+              <div class="stamp-meta">
+                <span class="stamp-title">Microsoft Student Ambassador</span>
+                <span class="stamp-sub">Azure, AI, &amp; Cloud Security Advocate</span>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="achievement-stamp-card">
+              <div class="stamp-number">03</div>
+              <div class="stamp-icon">👥</div>
+              <div class="stamp-meta">
+                <span class="stamp-title">Community Builder</span>
+                <span class="stamp-sub">Led 1000+ Student Developers Across Tech Tracks</span>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="achievement-stamp-card">
+              <div class="stamp-number">04</div>
+              <div class="stamp-icon">📦</div>
+              <div class="stamp-meta">
+                <span class="stamp-title">6+ Production Platforms</span>
+                <span class="stamp-sub">Built &amp; Deployed Scalable Web &amp; Security Tools</span>
+              </div>
+            </div>
+
+            <!-- 05 -->
+            <div class="achievement-stamp-card">
+              <div class="stamp-number">05</div>
+              <div class="stamp-icon">🛡️</div>
+              <div class="stamp-meta">
+                <span class="stamp-title">CTF Competitor &amp; Creator</span>
+                <span class="stamp-sub">Blackout Sector Platform Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 05 — CONTACT & CONNECT
+       ========================================================================= -->
+  <section class="retro-section" id="contact">
+    <div class="retro-container">
+      
+      <div class="contact-card-box">
+        <div class="contact-box-left">
+          <span class="retro-tag-pill">05 // GET IN TOUCH</span>
+          <h2 class="contact-main-heading">
+            Have a project?<br>
+            Let's build something<br>
+            <span class="highlight-underline">useful together.</span>
+          </h2>
+          <p class="contact-lead-desc">
+            I am always eager to collaborate on cybersecurity advisories, hackathons, innovative web products, and student community initiatives.
+          </p>
+
+          <!-- Contact Email Direct Action -->
+          <div class="contact-input-group">
+            <input type="text" id="contactEmailDisplay" class="contact-email-input" value="amankumar.tech@gmail.com" readonly>
+            <button class="retro-btn-solid" id="contactCopyBtn">
+              Copy Email
+            </button>
+          </div>
+          <div id="copyToast" class="retro-toast">✓ Email copied to clipboard!</div>
+
+          <!-- Social Buttons Strip -->
+          <div class="retro-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <span class="social-icon">in</span> LinkedIn ↗
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <span class="social-icon">🐙</span> GitHub ↗
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <span class="social-icon">📷</span> Instagram ↗
+            </a>
+            <a href="mailto:amankumar.tech@gmail.com" class="social-pill">
+              <span class="social-icon">✉</span> Mail ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-box-right">
+          <!-- Retro Inquiry Form -->
+          <form class="retro-form" id="contactForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+            <h3 class="form-title">Send a Quick Dispatch</h3>
+            
+            <div class="form-group">
+              <label for="formName" class="form-label">Your Name</label>
+              <input type="text" id="formName" class="form-control" placeholder="e.g. Alex Vance" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail" class="form-label">Your Email</label>
+              <input type="email" id="formEmail" class="form-control" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">Message / Project Idea</label>
+              <textarea id="formMessage" class="form-control" rows="4" placeholder="Let's build an audit tool / collaborate on a hackathon..." required></textarea>
+            </div>
+
+            <button type="submit" class="retro-btn-solid form-submit-btn" id="formSubmitBtn">
+              Dispatch Message 🚀
+            </button>
+            <div id="formSuccessMsg" class="form-success-banner">
+              ✓ Message dispatched successfully! Aman will get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="retro-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="brand-logo-tile sm">A</div>
+        <div>
+          <span class="footer-brand-title">Aman Kumar</span>
+          <span class="footer-tagline">Cyber Security • Builder • Community</span>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <span class="handwritten-annotation">designed with retro-vintage passion &amp; pixel perfection ✎</span>
+      </div>
+
+      <div class="footer-right">
+        <span>&copy; 2026 Aman Kumar. All rights reserved.</span>
+        <button class="back-to-top-btn" id="backToTopBtn" title="Back to top">↑ Top</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       PROJECT DETAILS MODAL (Retro Popup)
+       ========================================================================= -->
+  <div class="retro-modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="retro-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-badge" id="modalCategory">SECURITY PLATFORM</span>
+          <h2 class="modal-title" id="modalTitle">ROOTSEC</h2>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close details modal">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-media-box">
+          <img src="assets/project-rootsec.jpg" alt="Project Preview" class="modal-preview-img" id="modalImg">
+        </div>
+        
+        <p class="modal-desc" id="modalDesc">
+          Detailed project overview and architectural breakdown.
+        </p>
+
+        <div class="modal-meta-section">
+          <span class="modal-meta-label">TECH STACK &amp; INFRASTRUCTURE</span>
+          <div class="modal-pills" id="modalTechStack">
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="modal-actions-row">
+          <a href="#contact" class="retro-btn-solid" id="modalActionLink">Get In Touch ↗</a>
+          <button class="retro-btn-outline" id="modalDismissBtn">Close Window</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
